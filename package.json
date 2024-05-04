@@ -1,0 +1,30 @@
+{
+  "name": "icykatara.github.io",
+  "version": "1.0.0",
+  "description": "Personal Creative Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\"",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "icykatara.github.io"
+  },
+  "keywords": [
+    "art",
+    "ceramic",
+    "software",
+    "engineering",
+    "web",
+    "development"
+  ],
+  "author": "Jeanne Chan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "server-js": "^0.1.4"
+  }
+}
